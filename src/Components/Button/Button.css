@@ -1,0 +1,22 @@
+button {
+    width: 144px;
+    height: 56px;
+    padding: 10px 30px;
+    background-color: #1D2130;
+    border-radius: 12px;
+    color: white;
+    font-weight: 700;
+    font-size: 12px;
+    border: none;
+}
+.button1 {
+    width: 144px;
+    height: 56px;
+    padding: 10px 30px;
+    color: #1D2130;
+    border-radius: 12px;
+    background-color: white;
+    font-weight: 700;
+    font-size: 12px;
+    border: none;
+}

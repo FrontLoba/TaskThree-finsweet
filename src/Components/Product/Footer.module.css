@@ -1,0 +1,133 @@
+Footer{
+    background-color: #1D2130;
+    padding: 50px;
+}
+.topfoot {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.leftFoot {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* gap: 15%; */
+    flex: 60%;
+}
+.leftFoot div {
+    padding-top: 30px;
+    flex: 30%;
+}
+
+.leftFoot ul {
+    list-style: none;
+    line-height: 30px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.listHead {
+    font-weight: 600;
+    font-size: 18px;
+}
+.rightFoot {
+    flex:35%;
+    /* padding: 0 20px; */
+}
+.rightFoot h3 {
+    font-size: 40px;
+    font-weight: 700;
+}
+.rightFoot p {
+    font-weight: 400;
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.rightFoot input[type="email"] {
+    background: #2B2E3C;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 450px;
+    padding: 15px 10px;
+    border: none;
+    color: white;
+}
+.rightFoot input[type="submit"] {
+    background: white;
+    border-radius: 8px;
+    margin-left: -100px;
+    width: 100%;
+    max-width: 100px;
+    padding: 15px 10px;
+    border: none;
+}
+
+
+.bottomFoot {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    align-items: center;
+    color: white;
+}
+.bottomFoot img {
+    display: block
+}
+
+.lines {
+    width: 35%;
+    height: 1px;
+    background-color: white;
+   
+    
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        padding-top: 30px;
+    }
+    
+    .rightFoot, .leftFoot {
+        flex: 100%;
+    }
+    .rightFoot {
+        margin-top: 30px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .leftFoot div {
+        padding-top: 10px;
+    }
+    .rightFoot input{
+        display: block;
+    }
+    .rightFoot input[type="submit"] {
+        margin: 10px auto;
+    }
+    .topfoot div {
+        flex: 50%;
+    }
+    .bottomFoot {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 60px;
+        align-items: center;
+        color: white;
+    }
+    .bottomFoot img {
+        display: inline;
+        margin: 5px 0;
+    }
+}

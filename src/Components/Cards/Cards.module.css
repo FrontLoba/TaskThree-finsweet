@@ -1,0 +1,31 @@
+
+.Cards h3 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.Cards p {
+    font-weight: 400;
+    font-size: 16px;
+}
+.Cards {
+    width: 33%;
+    height: auto;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .Cards {
+        width: 50%;
+    }
+    
+}
+@media screen and (max-width: 700px) {
+    .Cards {
+        width: 100%;
+        margin-top: 5px;
+    }
+    
+}

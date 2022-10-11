@@ -1,0 +1,47 @@
+
+.Services h2 {
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    width: 65vw;
+    margin: 0 auto;
+    padding: 70px 0 50px 0;
+}
+
+
+.servCards {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    opacity: 0.87;
+    border-radius: 0px 67px 0px 0px;
+    background-color:azure;
+    padding: 5%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .Services h2 {
+        font-weight: 700;
+        font-size: calc(48px + 0.01vw);
+        width: 90vw;
+        padding: 50px 0 30px 0;
+    }
+    .servCards {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+}
+@media screen and (max-width: 450px) {
+    .Services h2 {
+        font-weight: 700;
+        font-size: calc(40px + 0.01vw);
+        width: 90vw;
+        padding: 50px 0 30px 0;
+    }
+       
+}
+
+

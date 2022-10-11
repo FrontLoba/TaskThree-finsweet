@@ -1,0 +1,89 @@
+.platform {
+    flex: 25%;
+    padding: 40px 20px;
+    background: white;
+    box-shadow: 2px 2px 2px gray;
+    border: 1px solid black;
+    border-radius: 24px;
+}
+.platform:hover {
+    flex: 25%;
+    padding: 40px 20px;
+    background: linear-gradient(175.67deg, #D7E7F9 13.12%, #D5F4EC 96.48%);
+    border: 2px solid #6B7CFF;
+    border-radius: 24px;
+}
+
+.pHeads {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    border-bottom: 2px solid black;
+}
+
+.tHead {
+    font-weight: 700;
+    font-size: 36px;
+    margin-left: 10px;
+}
+.bHead {
+    font-weight: 700;
+    font-size: 36px;
+    margin: 10px 0;
+}
+.bHead, .pPara3 {
+    text-align: center;   
+}
+
+.pPara1, .pPara2, .pPara3 {
+    font-weight: 400;
+    font-size: 16px;
+}
+.pPara1 {
+    margin: 10px 0;
+}
+.pPara2 {
+    text-align: center;
+}
+
+.pList {
+    list-style: none;
+}
+
+.pList li {
+    padding-left: 35px;
+    margin: 20px 0;
+    contain: '';
+    background: url(../../assests/li-mark.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+button {
+    margin: 10px 100px;
+}
+
+@media screen and (max-width: 920px) {
+    .platform {
+        flex: 100%;
+        width: 85vw;
+        align-self: center;
+    }
+    /* button {
+        margin: 10px;
+    } */
+    
+}
+
+@media screen and (max-width: 768px) {
+    .tHead, .bHead {
+        font-size: calc(30px + 0.01vw);
+    }
+    .pHeads {
+        gap: 20px;
+    }
+    .platform {
+        margin-top: 20px;
+    }
+    
+}

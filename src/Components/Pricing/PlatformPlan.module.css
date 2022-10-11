@@ -1,0 +1,15 @@
+.pContainer {
+    display: flex;
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:920px) {
+    .pContainer {
+        flex-direction: column;
+        margin-top: 20px;
+        flex-wrap: wrap;
+        width: 80%;
+    }
+}

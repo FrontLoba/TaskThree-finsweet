@@ -1,0 +1,83 @@
+.coreValues {
+    width: 87%;
+    margin: 100px auto;
+    
+}
+.values {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: #1D2130;
+  
+}
+
+.values div, .reserves div  {
+    width: 47%;
+    height: auto;
+    align-items: center;
+    
+}
+.vals {
+    padding: 50px 0;
+}
+.values h3, .reserves h3 {
+    font-weight: 700;
+    font-size: calc(48px + 0.025vw);
+    line-height: 50px;
+    margin-bottom: 20px;
+    
+}
+.values p, .reserves p {
+    font-weight: 400;
+    font-size: calc(16px + 0.25vw);
+    line-height: 30px;
+    text-align: justify;
+}
+
+p.mixColor  {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 24px;
+    background: linear-gradient(53.94deg, #373FFF 15.02%, #3ACAF8 82.83%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.values img, .reserves img {
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+}
+
+.reserves {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    color: #1D2130;
+    
+}
+
+@media screen and (max-width: 700px) {
+    .values {
+        display: grid;
+    }
+    .reserves {
+        display: grid;
+    }
+    .values div, .reserves div  {
+        width: 100%;
+    }
+    .values h3, .reserves h3 {
+        font-size: calc(40px + 0.25vw)
+    }
+    .values p, .reserves p {
+        font-size: calc(14px + 0.25vw)
+    }
+    p.mixColor  {
+        font-size: calc(24px + 0.25vw)
+    }
+}
+

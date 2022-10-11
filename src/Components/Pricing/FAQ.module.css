@@ -1,0 +1,83 @@
+.faq {
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+    width: 90%;
+    padding: 30px;
+    background: azure;
+    border-radius: 20px;
+}
+
+.faq1 {
+    flex: 40%; 
+}
+.faq1 h2 {
+    font-size: calc(40px + 0.25vw);
+    font-weight: 700px;
+}
+.faq1 p {
+    font-size: calc(16px + 0.25vw);
+    font-weight: 400px;
+    margin-top: 20px;
+}
+.quest {
+    flex: 60%;
+}
+.quest div {
+    margin-bottom: 20px;
+    /* border: 1px solid blue; */
+}
+.quest h3 {
+    font-weight: 700;
+    font-size: 24px; 
+    background: white;
+    padding: 10px 20px; 
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    justify-content: flex-start;  
+}
+.headThree {
+    flex: 88%;
+}
+
+.closeAns {
+    font-weight: 400;
+    font-size: 16px; 
+    background: white;
+    padding: 10px 20px; 
+    border-radius: 0 0 20px 20px;
+    display: none;
+}
+.openAns {
+    font-weight: 400;
+    font-size: 16px; 
+    background: white;
+    padding: 10px 20px; 
+    border-radius: 0 0 20px 20px;
+    display: block;
+}
+.plusSign:hover, .minusSign:hover {
+    cursor: pointer;
+} 
+.plusSign {
+    color:aquamarine;
+} 
+.minusSign {
+    color: red;
+} 
+
+@media screen and (max-width: 768px) {
+    .faq {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .faq1 {
+        flex: 100%; 
+    }
+    .quest {
+        flex: 100%;
+        margin-top: 30px;
+    }
+}
