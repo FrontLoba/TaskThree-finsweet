@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Button from '../Button/Button';
 import './NavBar.css'
 import '../Button/Button.css'
+import {Link} from 'react-router-dom'
 
 
 const NavBar = () => {
@@ -19,12 +20,13 @@ const NavBar = () => {
 
             <div className="nav">
                 <ul className='nav-list'>
-                    <li>Home</li>
-                    <li>Product</li>
-                    <li>Pricing</li>
-                    <li>About Us</li>
-                    <li>Blog</li>
-                    <li>Contact</li>
+                
+                    <li><Link to='/'>Home</Link></li>
+                    <li><Link to='/'>Product</Link></li>
+                    <li><Link to='/Pricing'>Pricing</Link></li>
+                    <li><Link to='/'>About Us</Link></li>
+                    <li><Link to='/'>Blog</Link></li>
+                    <li><Link to='/contact'>Contact</Link></li>
                     <li className='m-hide'>Free Trial</li>
                 </ul>
                 
