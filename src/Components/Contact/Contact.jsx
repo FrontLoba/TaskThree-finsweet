@@ -22,15 +22,6 @@ const Contact = () => {
                 <div className={contactStyle.content}>
 
                     <div className={contactStyle.mainCon}>
-                        {/* <div className={contactStyle.inputGroup}>
-                            <div>
-                            <input type='text' value='' placeholder='Full name' />
-                            </div>
-        
-                            <div>
-                            <input type='text' value='' placeholder='Company name' />
-                            </div>
-                        <div> */}
                         <div className={contactStyle.wrapInput}>
                             <div>
                                 <input type='text' value='' placeholder='Full name' />
@@ -54,7 +45,7 @@ const Contact = () => {
                         </div>
                         
                         <div className={contactStyle.submit}>
-                        <input type="submit" value='Submit'  />
+                        <input type="submit" value='Submit'  id={contactStyle.submit}/>
                         </div>
 
                     </div>
