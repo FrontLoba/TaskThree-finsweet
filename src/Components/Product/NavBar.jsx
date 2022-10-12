@@ -29,8 +29,8 @@ const NavBar = () => {
                 
             </div>
 
-            <div className={!toggle ? "openList" : ""} >
-                <ul className='nav-list'>
+            <div className={!toggle ? "mobile-nav" : ""} >
+                <ul id="nav-list" className={!toggle ? "openList" : ""}>
                 
                     <li><Link to='/'>Home</Link></li>
                     <li><Link to='/'>Product</Link></li>
