@@ -14,9 +14,6 @@ function Pricing () {
             <PriceHero/>
             <PlatformPlan/>
             <FAQ />
-            {/* <Services/>
-            <CoreValue/>
-            <Features/> */}
             <NearFooter/>
             <Footer/>
         </div>

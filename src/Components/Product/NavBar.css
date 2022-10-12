@@ -1,14 +1,21 @@
 .Nav-bar {
-    width: 85%;
+    width: 90%;
     margin: 30px auto 0 auto;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
+    /* border: 1px solid black; */
 }
+
+
 
 .logo {
     font-weight: 800;
     font-size: 40px;
     color: #1E1B1B;
+    flex: 30%;
+}
+.nav {
+    flex: 70%;
 }
 .hide {
     display: none;

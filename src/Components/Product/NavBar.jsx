@@ -11,7 +11,7 @@ const NavBar = () => {
     return (
         <div className='Nav-bar'>
             <div className="logo">
-            finSweet
+                finSweet
                <span className='open-icon hide'>&#9776;</span>
                 <span className='close-iconn hide'>&times;</span>
                 
