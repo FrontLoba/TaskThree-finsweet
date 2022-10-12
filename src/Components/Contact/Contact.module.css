@@ -88,3 +88,25 @@ input, textarea {
     font-size: 16px;
 }
 
+
+@media screen and (max-width:768px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 50px;
+    }
+    .wrapInput {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+    }
+
+    .thead {
+        font-weight: 700;
+        font-size: calc(50px + 0.25vw);
+        width: 90%;
+        margin: 60px auto;
+    
+    }
+}

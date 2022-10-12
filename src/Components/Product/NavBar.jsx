@@ -9,16 +9,27 @@ const NavBar = () => {
     let [btn1] = useState (
         'Free Trial'
     )
+    let [toggle, setToggle] = useState(true)
+    const HandleClick = () => {
+        setToggle(toggle => !toggle)
+    }
     return (
         <div className='Nav-bar'>
             <div className="logo">
+                <div>
                 finSweet
-               <span className='open-icon hide'>&#9776;</span>
-                <span className='close-iconn hide'>&times;</span>
+                </div>
+                <div onClick={HandleClick}>
+                {toggle === true ?
+                    <span className='open-icon hide'>&#9776;</span> :
+                     <span className='close-icon hide'>&times;</span>
+
+                }
+                </div>
                 
             </div>
 
-            <div className="nav">
+            <div className={!toggle ? "openList" : ""} >
                 <ul className='nav-list'>
                 
                     <li><Link to='/'>Home</Link></li>
@@ -29,6 +40,16 @@ const NavBar = () => {
                     <li><Link to='/contact'>Contact</Link></li>
                     <li className='m-hide'>Free Trial</li>
                 </ul>
+                {/* <ul className='mobile-list'>
+                
+                    <li><Link to='/'>Home</Link></li>
+                    <li><Link to='/'>Product</Link></li>
+                    <li><Link to='/Pricing'>Pricing</Link></li>
+                    <li><Link to='/'>About Us</Link></li>
+                    <li><Link to='/'>Blog</Link></li>
+                    <li><Link to='/contact'>Contact</Link></li>
+                    <li className='m-hide'>Free Trial</li>
+                </ul> */}
                 
             </div>
 

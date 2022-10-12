@@ -15,7 +15,7 @@ const Contact = () => {
     return (
         <div>
             <NavBar/> 
-            <h1 className={contactStyle.thead}>Get in with us</h1>
+            <h1 className={contactStyle.thead}>Get in touch with us</h1>
             <div className={contactStyle.container}>
                 <h2>Drop us a message</h2>
                 <p>We will get to you as soon as possibe</p>

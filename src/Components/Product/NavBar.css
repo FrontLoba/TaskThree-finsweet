@@ -6,7 +6,10 @@
     /* border: 1px solid black; */
 }
 
-
+.Nav-bar a {
+    text-decoration: none;
+    color: black
+}
 
 .logo {
     font-weight: 800;
@@ -21,7 +24,6 @@
     display: none;
 }
 
-
 .nav-list {
     display: flex;
     list-style: none;
@@ -31,7 +33,7 @@
     padding: 20px;
     font-weight: 400;
     font-size: 16px;
-    color: #1D2130;
+    color: white;
 }
 .m-hide {
     display: none;
@@ -46,11 +48,12 @@
         background: #1D2130;
         color:white;
     }
-    .nav-list li{
+    .nav-list{
         padding: 10px;
         font-weight: 400;
         font-size: 16px;
         color: #1D2130;
+        display: none;
     }
     button {
         display: none;
@@ -62,32 +65,66 @@
     .m-hide {
         display: none;
     }
+    .Nav-bar li a {
+        text-decoration: none;
+        color: black;
+        display: block;
+    }
 }
 
 @media screen and (max-width: 768px) {
+    .Nav-bar a {
+        text-decoration: none;
+        color: white
+    }
     .Nav-bar {
         padding: 10px 0;
         display: flex;
         justify-content: flex-start;
         }
 
-    .nav-list {
+    .nav-list ul li{
         display: none;
     }
-    .open-icon {
+    .open-icon, .close-icon {
         display: inline-block;
         position: absolute;
+        top: 60px;
         left: 85vw;
+        cursor: pointer;
     }
-    .mobile-nav {
+    /* .mobile-nav {
         display: block;
         position: absolute;
-        top: 15%;
+        top: 150px;
+        left: 0;
         background: #1D2130;
+        opacity: 0.8;
         width: 80vw;
         height: 100vh;
+    } */
+    .mobile-nav li {
+        color: white;
     }
-    .mobile-nav li{
+    .openList {
+        display: block;
+        padding: 20px 0;
+        list-style: none;
+    }
+    .openList li {
+        display: block;
+        padding: 5px 30px;
+        list-style: none;
+        background-color: #1E1B1B;
+        margin-bottom: 10px;
+        color: white;
+    }
+    .openList li a {
+        color: white;
+        padding: 20px 30px;
+    }
+    .openList li a:hover {
+        background-color: #1D2130;
         color: white;
     }
 
