@@ -20,7 +20,7 @@ const NavBar = () => {
                 finSweet
                 </div>
                 <div onClick={HandleClick}>
-                {toggle === true ?
+                {toggle ?
                     <span className='open-icon hide'>&#9776;</span> :
                      <span className='close-icon hide'>&times;</span>
 
@@ -29,8 +29,8 @@ const NavBar = () => {
                 
             </div>
 
-            <div className={!toggle ? "mobile-nav" : ""} >
-                <ul id="nav-list" className={!toggle ? "openList" : ""}>
+            <div>
+            <ul className={!toggle ? "nav-list open-list" : "nav-list"}>
                 
                     <li><Link to='/'>Home</Link></li>
                     <li><Link to='/'>Product</Link></li>
@@ -40,7 +40,7 @@ const NavBar = () => {
                     <li><Link to='/contact'>Contact</Link></li>
                     <li className='m-hide'>Free Trial</li>
                 </ul>
-                {/* <ul className='mobile-list'>
+                {/* <ul id='mobile-list' className={!toggle ? "open-list" : "close-list"}>
                 
                     <li><Link to='/'>Home</Link></li>
                     <li><Link to='/'>Product</Link></li>
@@ -48,7 +48,6 @@ const NavBar = () => {
                     <li><Link to='/'>About Us</Link></li>
                     <li><Link to='/'>Blog</Link></li>
                     <li><Link to='/contact'>Contact</Link></li>
-                    <li className='m-hide'>Free Trial</li>
                 </ul> */}
                 
             </div>

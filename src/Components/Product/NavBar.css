@@ -24,18 +24,22 @@
     display: none;
 }
 
-#nav-list {
+.nav-list {
     display: flex;
     list-style: none;
+
 }
 
-#nav-list li{
+.nav-list li{
     padding: 20px;
     font-weight: 400;
     font-size: 16px;
     color: white;
 }
 .m-hide {
+    display: none;
+}
+.close-list {
     display: none;
 }
 
@@ -48,13 +52,7 @@
         background: #1D2130;
         color:white;
     }
-    #nav-list{
-        padding: 10px;
-        font-weight: 400;
-        font-size: 16px;
-        color: #1D2130;
-        display: none;
-    }
+    
     button {
         display: none;
     }
@@ -77,15 +75,19 @@
         text-decoration: none;
         color: white
     }
-    .Nav-bar {
+    /* .Nav-bar {
         padding: 10px 0;
         display: flex;
         justify-content: flex-start;
-        }
-
-    .nav-list {
-        display: block;
+    } */
+    .nav-list{
+        /* padding: 10px;
+        font-weight: 400;
+        font-size: 16px;
+        color: #1D2130; */
+        display: none;
     }
+
     .open-icon, .close-icon {
         display: inline-block;
         position: absolute;
@@ -93,7 +95,42 @@
         left: 85vw;
         cursor: pointer;
     }
-    .mobile-nav {
+
+    .open-list {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80vw;
+        height: 100vh;
+        background-color: #1D2130;
+        /* background-color:aquamarine; */
+        padding: 30px;
+    }
+    
+    .open-list li {
+        padding: 20px 20px;
+        list-style: none;
+        margin-bottom: 10px;
+        font-size: 16px;
+        color: white;
+    }
+    .open-list li:hover {
+        padding: 20px 20px;
+        background-color: aquamarine;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+    .open-list li:hover a {
+        color: black;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+    .open-list li a {
+        color: white;
+
+    }
+    /* .mobile-list {
         display: block;
         position: absolute;
         top: 0;
@@ -103,15 +140,8 @@
         width: 80vw;
         height: 100vh;
     }
-    .mobile-nav li {
-        color: white;
-    }
-    .openList {
-        display: block;
-        padding: 20px 0;
-        list-style: none;
-    }
-    .openList li {
+   
+    .mobile-list li {
         display: block;
         padding: 5px 30px;
         list-style: none;
@@ -119,13 +149,9 @@
         margin-bottom: 10px;
         color: white;
     }
-    .openList li a {
+    .mobile-list li a {
         color: white;
         padding: 20px 30px;
-    }
-    .openList li a:hover {
-        background-color: #1D2130;
-        color: white;
-    }
+    } */
 
 }
