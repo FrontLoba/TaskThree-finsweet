@@ -30,7 +30,7 @@ const NavBar = () => {
             </div>
 
             <div>
-            <ul className={!toggle ? "nav-list open-list" : "nav-list"}>
+                <ul className={!toggle ? "nav-list open-list" : "nav-list"}>
                 
                     <li><Link to='/'>Home</Link></li>
                     <li><Link to='/'>Product</Link></li>
@@ -40,15 +40,6 @@ const NavBar = () => {
                     <li><Link to='/contact'>Contact</Link></li>
                     <li className='m-hide'>Free Trial</li>
                 </ul>
-                {/* <ul id='mobile-list' className={!toggle ? "open-list" : "close-list"}>
-                
-                    <li><Link to='/'>Home</Link></li>
-                    <li><Link to='/'>Product</Link></li>
-                    <li><Link to='/Pricing'>Pricing</Link></li>
-                    <li><Link to='/'>About Us</Link></li>
-                    <li><Link to='/'>Blog</Link></li>
-                    <li><Link to='/contact'>Contact</Link></li>
-                </ul> */}
                 
             </div>
 

@@ -1,0 +1,27 @@
+/*
+
+.formInput {
+    width: 50vw;
+    height: 100vh;
+}
+input {
+    width: 20vw;
+    border: 1px solid;
+    padding: 20px 10px;
+}
+.errMess {
+    color: red;
+    font-size: 12px;
+    display: none
+}
+input:invalid[focus="true"] ~span {
+    display: block;
+}
+input:invalid[focus="true"] {
+    border: 1px solid red;
+}
+input:valid {
+    border: 1px solid blue;
+}
+
+*/

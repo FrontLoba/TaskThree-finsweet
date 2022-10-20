@@ -44,19 +44,24 @@ function Footer () {
             <div className={footStyle.rightFoot}>
                 <h3>finSweet</h3>
                 <p>Subscribe to our Newsletter</p>
-                <form>
-                <input type="email" placeholder="Enter your Email" />
-                <input type="submit" value="Subscribe" />
+                <form className={footStyle.footForm}>
+                 
+                    <input type="email" placeholder="Enter your Email" id={footStyle.email} />
+                
+                    <input type="submit" value="Subscribe" id={footStyle.submit} />
+    
                 </form>
             </div>
         </section>
             <div className={footStyle.bottomFoot}>
                 <div className={footStyle.lines}></div>
                 <p>&copy; Copyright Finsweet 2022</p>
+                <div className={footStyle.footImage}>
                 <img src={fbIcon} alt="" />
                 <img src={twitIcon} alt="" />
                 <img src={instaIcon} alt="" />
                 <img src={linkedIcon} alt="" />
+                </div>
                 <div className={footStyle.lines}></div>
             </div>
         </footer>

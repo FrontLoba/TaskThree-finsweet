@@ -48,7 +48,12 @@ Footer{
     margin: 20px 0;
 }
 
-.rightFoot input[type="email"] {
+.footForm {
+    display: flex;
+}
+
+#email {
+    display: block;
     background: #2B2E3C;
     border-radius: 8px;
     width: 100%;
@@ -57,7 +62,7 @@ Footer{
     border: none;
     color: white;
 }
-.rightFoot input[type="submit"] {
+#submit {
     background: white;
     border-radius: 8px;
     margin-left: -100px;
@@ -66,7 +71,6 @@ Footer{
     padding: 15px 10px;
     border: none;
 }
-
 
 .bottomFoot {
     width: 95%;
@@ -78,16 +82,16 @@ Footer{
     align-items: center;
     color: white;
 }
+
 .bottomFoot img {
-    display: block
+    display: inline-block;
+    margin: 0 10px;
 }
 
 .lines {
-    width: 35%;
+    width: 200px;
     height: 1px;
-    background-color: white;
-   
-    
+    background-color: white;  
 }
 
 @media screen and (max-width: 768px) {
@@ -100,6 +104,11 @@ Footer{
     }
     .rightFoot {
         margin-top: 30px;
+    }
+    .lines {
+        width: 5vw;
+        height: 1px;
+        background-color: white;  
     }
 
 }
@@ -130,4 +139,12 @@ Footer{
         display: inline;
         margin: 5px 0;
     }
+    .bottomFoot p {
+        margin: 10px;
+        text-align: center;
+    }
+    .bottomFoot img {
+       margin: 10px;
+    }
+    
 }

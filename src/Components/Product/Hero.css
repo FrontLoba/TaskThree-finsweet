@@ -4,6 +4,9 @@ margin: 80px auto 0 auto;
 display: flex;
 justify-content: space-between;
 color: #1D2130;
+/* background: url(../../assests/BlurGradient1.png);
+background-position: right;
+background-repeat: no-repeat;  */
 
 }
 .hero-word {
